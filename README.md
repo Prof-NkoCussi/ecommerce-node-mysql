@@ -32,8 +32,6 @@ El objetivo es ofrecer una plataforma accesible donde los usuarios puedan descub
 
 ## Sobre mí
 
-Mi nombre es **Nicolas Cussi** y actualmente me desempeño como **profesor en escuelas secundarias**, dictando materias relacionadas con **Ed. tecnologica, programación y robótica**.
-
 Decidí realizar el trayecto de **Full Stack Developer en Digital House** como un desafío personal y profesional, con el objetivo de incorporar nuevas tecnologías, ampliar mis conocimientos en desarrollo web y continuar perfeccionándome en el área de la programación.
 
 Este proyecto forma parte del proceso de formación dentro del programa y representa una oportunidad para aplicar de manera práctica los conocimientos adquiridos durante la cursada.
