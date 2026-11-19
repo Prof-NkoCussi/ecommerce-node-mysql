@@ -269,4 +269,5 @@ DPFS_nicolas_cussi/
 | Sprint 8 | API REST + Dashboard React | ✅ Completado |
 
 *Proyecto: Ushuaia MusicStore — FINALIZADO*
-*Digital House Full Stack - 2026*
+
+*Digital House Full Stack*
