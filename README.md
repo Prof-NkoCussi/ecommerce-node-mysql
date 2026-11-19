@@ -1,124 +1,86 @@
-# 🎸 Ushuaia Music Store
+<h1 align="center">🎸 Ushuaia Music Store</h1>
 
-## 🛒 E-commerce de Instrumentos Musicales
+<p align="center">
+  E-commerce de instrumentos musicales con Node.js, Express, MySQL y un dashboard en React.
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white" alt="Sequelize">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" alt="Vite">
+</p>
 
-## Descripción del proyecto
-
-**Ushuaia Music Store** es un e-commerce dedicado a la venta de instrumentos musicales y equipamiento para músicos.
-El sitio permitirá a los usuarios explorar diferentes categorías de instrumentos como guitarras, teclados, baterías, micrófonos y accesorios musicales, visualizar los detalles de cada producto y agregarlos a un carrito de compras para realizar la compra online.
-
-La plataforma busca ofrecer una experiencia de usuario simple, intuitiva y moderna, permitiendo a los músicos encontrar fácilmente los instrumentos que necesitan y realizar su compra de forma rápida y segura.
-
-El proyecto forma parte del desafío profesional del programa **Full Stack Developer**, donde se desarrollará una aplicación completa utilizando tecnologías como **Node.js, bases de datos y React**.
-
----
-
-## Objetivo
-
-El sitio está orientado a personas interesadas en la música, desde principiantes que desean comprar su primer instrumento hasta músicos más experimentados que buscan ampliar su equipamiento.
-
-El público principal está compuesto por:
-
-* Jóvenes y adultos 
-* Estudiantes de música
-* Músicos aficionados y profesionales
-* Personas interesadas en instrumentos y equipamiento musical
-
-El objetivo es ofrecer una plataforma accesible donde los usuarios puedan descubrir instrumentos musicales y adquirirlos fácilmente desde cualquier lugar.
+Proyecto final del trayecto **Full Stack Developer** de Digital House. Es una tienda online completa: catálogo por categorías, carrito, registro e inicio de sesión, gestión de productos con carga de imágenes, API REST y un dashboard de estadísticas.
 
 ---
 
-## Sobre mí
+## 🎬 Demo
 
-Decidí realizar el trayecto de **Full Stack Developer en Digital House** como un desafío personal y profesional, con el objetivo de incorporar nuevas tecnologías, ampliar mis conocimientos en desarrollo web y continuar perfeccionándome en el área de la programación.
+<!-- GIF principal: flujo completo de compra (home → producto → carrito). Ideal: 10-20 s, menos de 10 MB -->
+<p align="center">
+  <img src="docs/img/demo-compra.gif" alt="Flujo de compra" width="800">
+</p>
 
-Este proyecto forma parte del proceso de formación dentro del programa y representa una oportunidad para aplicar de manera práctica los conocimientos adquiridos durante la cursada.
-
----
-
-## Sitios de Referencia
-
-Para el diseño y funcionalidades del proyecto se tomaron como referencia distintos sitios del mercado que ofrecen experiencias de compra similares o que presentan buenas prácticas de diseño y navegación.
-
-### 1️⃣ Mercado Libre
-https://www.mercadolibre.com.ar
-
-Elegido por ser uno de los marketplaces más grandes de Latinoamérica y por su sistema de búsqueda, navegación por categorías y experiencia de compra.
-
-### 2️⃣ Get Back Music Store
-https://www.get-back.com.ar
-
-Tienda especializada en instrumentos musicales y equipamiento profesional. Se tomó como referencia por su catálogo de productos y organización por categorías.
-
-### 3️⃣ SDQ Store
-https://www.sdqstore.com.ar
-
-Empresa argentina con amplia trayectoria en la venta de instrumentos musicales. Fue elegida como referencia por su estructura de e-commerce y variedad de productos.
-
-### 4️⃣ The Rock Store
-https://therockstore.com.ar
-
-Sitio especializado en instrumentos musicales y equipamiento de audio. Se destaca por su diseño visual y organización del catálogo de productos.
-
-### 5️⃣ Centro Música
-https://centromusica.com.ar
-
-Tienda dedicada a la comercialización de instrumentos musicales y equipos de sonido. Se tomó como referencia por su presentación de productos y categorías.
+<table>
+  <tr>
+    <td align="center"><b>Catálogo</b><br><img src="docs/img/catalogo.png" width="400"></td>
+    <td align="center"><b>Detalle de producto</b><br><img src="docs/img/detalle.png" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Carrito</b><br><img src="docs/img/carrito.png" width="400"></td>
+    <td align="center"><b>Registro y login</b><br><img src="docs/img/login.gif" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Gestión de productos (admin)</b><br><img src="docs/img/admin-productos.gif" width="400"></td>
+    <td align="center"><b>Dashboard React</b><br><img src="docs/img/dashboard.png" width="400"></td>
+  </tr>
+</table>
 
 ---
 
-## Funcionalidades principales del sitio
+## ✨ Funcionalidades
 
-* Visualización de catálogo de productos
-* Página de detalle de cada instrumento
-* Registro e inicio de sesión de usuarios
-* Carrito de compras
-* Gestión de productos (crear, editar, eliminar)
-* Navegación por categorías
-* Autenticación con sesiones y contraseñas encriptadas
-* Panel de administración con estadísticas (Sprint 8)
+**Tienda**
+- Catálogo de productos y navegación por categorías (guitarras, teclados, baterías, micrófonos y accesorios).
+- Página de detalle de cada instrumento.
+- Carrito de compras.
 
----
+**Usuarios**
+- Registro e inicio de sesión con sesiones (`express-session`) y contraseñas encriptadas con `bcrypt`.
+- Perfil de usuario y rutas protegidas según el rol: invitado, usuario y administrador.
 
-## Tecnologías utilizadas
+**Administración**
+- Alta, edición y baja de productos, con subida de imágenes (`Multer`).
+- Validaciones en frontend y backend (`express-validator`) y mensajes al usuario con `connect-flash`.
 
-**Frontend**
-* HTML5
-* CSS3
-* JavaScript
-* EJS 
-* React 
-
-**Backend**
-* Node.js
-* Express
-* method-override 
-* express-session
-* bcrypt
-* Multer
-* connect-flash
-* Express Validator 
-
-**Base de datos**
-* JSON 
-* MySQL + Sequelize 
-
-**Herramientas**
-* Git / GitHub
-* nodemon
-* GitHub Projects
+**API REST y dashboard**
+- API REST con endpoints de productos y usuarios.
+- Dashboard en React (Vite) que consume la API: totales, último producto y usuario creados, categorías con su cantidad de productos y tabla de productos.
 
 ---
 
-## ▶️ Cómo correr el proyecto
+## 🧰 Tecnologías
 
-**Requisitos:** Node.js y MySQL instalados
+| Capa | Tecnologías |
+|------|-------------|
+| Frontend | HTML5, CSS3, JavaScript, EJS, React (Vite) |
+| Backend | Node.js, Express, express-session, bcrypt, Multer, connect-flash, express-validator, method-override |
+| Base de datos | MySQL + Sequelize |
+| Herramientas | Git / GitHub, GitHub Projects, nodemon |
+
+---
+
+## ▶️ Cómo correrlo
+
+**Requisitos:** Node.js y MySQL instalados.
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/Prof-NkoCussi/DPFS_nicolas_cussi.git
+git clone https://github.com/Prof-NkoCussi/ecommerce-node-mysql.git
+cd ecommerce-node-mysql
 
 # 2. Instalar dependencias
 npm install
@@ -128,146 +90,124 @@ cp .env.example .env
 # Editar .env con tus credenciales de MySQL
 
 # 4. Crear la base de datos
-# Abrir MySQL Workbench y ejecutar: database/structure.sql
+# Ejecutar database/structure.sql (por ejemplo, desde MySQL Workbench)
 
-# 5. Poblar la base de datos con datos de prueba
+# 5. Cargar datos de prueba
 node database/seeders.js
 
 # 6. Iniciar el servidor en modo desarrollo
 npm run dev
 ```
 
-El servidor queda disponible en: `http://localhost:3000`
+La tienda queda disponible en **http://localhost:3000**.
+
+**Dashboard (React):**
+
+```bash
+cd dashboard
+npm install
+npm run dev
+```
+
+El dashboard usa un proxy de Vite hacia la API de Express, por lo que el servidor del paso 6 debe estar corriendo.
+
+> **Usuarios de prueba:** _(completar con el usuario administrador y el usuario común que crea `seeders.js`; usar solo credenciales de demostración)_
 
 ---
 
-## 📁 Estructura del proyecto
+## 🔌 API REST
+
+_(Completar con los endpoints reales de `src/routes/api.js`.)_
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET | `/api/...` | ... |
+| GET | `/api/...` | ... |
+
+---
+
+## 🗄️ Base de datos
+
+Modelos Sequelize: `User`, `Product` y `Category`, con sus relaciones definidas en `database/models/index.js`.
+
+<!-- Exportar el DER (database/der_ushuaia_musicstore.pdf) a imagen y guardarlo como docs/img/der.png -->
+<p align="center">
+  <img src="docs/img/der.png" alt="Diagrama entidad-relación" width="700">
+</p>
+
+El diagrama editable está en `database/der_ushuaia_musicstore.drawio`.
+
+---
+
+<details>
+<summary><b>📁 Estructura del proyecto</b></summary>
 
 ```
-DPFS_nicolas_cussi/
-│
-├── app.js                          ← Servidor principal Express
+ecommerce-node-mysql/
+├── app.js                       # Servidor Express
 ├── package.json
-├── .env                            ← Variables de entorno (no sube a GitHub)
-├── .env.example                    ← Plantilla de variables de entorno
+├── .env.example                 # Plantilla de variables de entorno
 │
-├── dashboard/                      ← Sprint 8 — Dashboard React (Vite)
-│   ├── src/
-│   │   ├── App.jsx                 ← Componente principal
-│   │   ├── App.css
-│   │   └── components/
-│   │       ├── StatCard.jsx        ← Panel de totales
-│   │       ├── LastCreated.jsx     ← Último producto/usuario creado
-│   │       ├── CategoryList.jsx    ← Categorías con total de productos
-│   │       └── ProductTable.jsx    ← Tabla de productos
-│   ├── vite.config.js              ← Proxy hacia API Express
-│   └── package.json
+├── dashboard/                   # Dashboard React (Vite)
+│   └── src/components/          # StatCard, LastCreated, CategoryList, ProductTable
 │
-├── database/                       ← Sprint 6 — Base de datos
-│   ├── config.js                   ← Conexión Sequelize a MySQL
-│   ├── seeders.js                  ← Script para poblar la base de datos
-│   ├── structure.sql               ← Script de creación de tablas
-│   ├── der_ushuaia_musicstore.drawio ← Diagrama DER editable
-│   ├── der_ushuaia_musicstore.pdf  ← Diagrama DER (entregable)
-│   └── models/
-│       ├── index.js                ← Relaciones entre modelos
-│       ├── Category.js
-│       ├── Product.js
-│       └── User.js
+├── database/
+│   ├── config.js                # Conexión Sequelize a MySQL
+│   ├── structure.sql            # Creación de tablas
+│   ├── seeders.js               # Datos de prueba
+│   ├── der_ushuaia_musicstore.* # Diagrama DER
+│   └── models/                  # Category, Product, User
 │
-├── data/                           ← Sprint 4 — Datos JSON (reemplazados por MySQL)
-│   ├── products.json
-│   └── users.json
-│
-├── public/                         ← Archivos estáticos
-│   ├── images/
-│   │   ├── banner/
-│   │   ├── categories/
-│   │   ├── products/
-│   │   └── users/
-│   └── styles/
-│       ├── style.css
-│       ├── forms.css
-│       ├── productDetail.css
-│       └── productCart.css
-│
-├── scripts/
-│   └── hashPasswords.js
+├── public/                      # Estáticos (imágenes y estilos)
 │
 ├── src/
-│   ├── controllers/
-│   │   ├── indexController.js
-│   │   ├── productsController.js
-│   │   ├── usersController.js
-│   │   └── apiController.js        ← Sprint 8 — Endpoints API REST
-│   │
-│   ├── middlewares/
-│   │   ├── auth.js                 ← isGuest, isUser, isAdmin
-│   │   ├── multerConfig.js         ← Subida de imágenes
-│   │   └── validations.js          ← Reglas express-validator (Sprint 7)
-│   │
-│   ├── routes/
-│   │   ├── index.js                ← Home + Contacto
-│   │   ├── products.js
-│   │   ├── users.js
-│   │   └── api.js                  ← Sprint 8 — Rutas API REST
-│   │
-│   └── views/
-│       ├── index.ejs               ← Home
-│       ├── contact.ejs             ← Página de contacto
-│       ├── partials/
-│       │   ├── head.ejs
-│       │   ├── header.ejs
-│       │   └── footer.ejs
-│       ├── products/
-│       │   ├── list.ejs
-│       │   ├── detail.ejs
-│       │   ├── cart.ejs
-│       │   ├── create.ejs
-│       │   └── edit.ejs
-│       └── users/
-│           ├── register.ejs
-│           ├── login.ejs
-│           └── profile.ejs
+│   ├── controllers/             # index, products, users, api
+│   ├── middlewares/             # auth, multerConfig, validations
+│   ├── routes/                  # index, products, users, api
+│   └── views/                   # Vistas EJS (home, products, users, partials)
 │
-├── Views/                          ← Sprint 2 — Prototipos HTML estáticos
-│   ├── productDetail.html
-│   ├── productCart.html
-│   ├── register.html
-│   └── login.html
-│
-├── wireframes/                     ← Sprint 1 — Wireframes
-│   ├── home.png
-│   ├── detalle_producto.png
-│   ├── carrito.png
-│   ├── form_registro.png
-│   └── login.png
-│
-├── README.md
-└── retro.md
+├── Views/                       # Prototipos HTML estáticos (Sprint 2)
+├── wireframes/                  # Wireframes (Sprint 1)
+├── data/                        # Datos JSON de etapas previas (reemplazados por MySQL)
+└── retro.md                     # Retrospectiva
 ```
 
+</details>
+
+<details>
+<summary><b>🚀 Proceso de desarrollo (8 sprints)</b></summary>
+
+El proyecto se desarrolló de forma incremental y se organizó con [GitHub Projects](URL_DEL_TABLERO).
+
+| Sprint | Descripción |
+|--------|-------------|
+| 1 | Planificación, wireframes y README |
+| 2 | Maquetado HTML y CSS |
+| 3 | Node.js + Express + EJS |
+| 4 | CRUD con archivos JSON |
+| 5 | Usuarios y autenticación |
+| 6 | Base de datos MySQL + Sequelize |
+| 7 | Validaciones en frontend y backend |
+| 8 | API REST + Dashboard React |
+
+Los wireframes están en la carpeta [`wireframes/`](wireframes) y la retrospectiva en [`retro.md`](retro.md).
+
+</details>
+
+<details>
+<summary><b>🎯 Público objetivo y sitios de referencia</b></summary>
+
+El sitio apunta a jóvenes y adultos interesados en la música: desde quienes buscan su primer instrumento hasta músicos aficionados y profesionales que quieren ampliar su equipamiento.
+
+Para el diseño y la experiencia de compra se tomaron como referencia [Mercado Libre](https://www.mercadolibre.com.ar), [Get Back](https://www.get-back.com.ar), [SDQ Store](https://www.sdqstore.com.ar), [The Rock Store](https://therockstore.com.ar) y [Centro Música](https://centromusica.com.ar).
+
+</details>
+
 ---
 
-## 📌 Tablero de trabajo
+## 👤 Autor
 
-[Ver tablero en GitHub Projects](https://github.com/users/Prof-NkoCussi/projects/1)
+**Nicolás Cussi**: Full Stack Developer en formación (Digital House).
+Realicé este trayecto como un desafío personal y profesional, para incorporar nuevas tecnologías y aplicar en la práctica lo aprendido.
 
----
-
-## 🚀 Estado del proyecto
-
-| Sprint | Descripción | Estado |
-|--------|-------------|--------|
-| Sprint 1 | Planificación, wireframes y README | ✅ Completado |
-| Sprint 2 | Maquetado HTML y CSS | ✅ Completado |
-| Sprint 3 | Node.js + Express + EJS | ✅ Completado |
-| Sprint 4 | CRUD con archivos JSON | ✅ Completado |
-| Sprint 5 | Usuarios y autenticación | ✅ Completado |
-| Sprint 6 | Base de datos MySQL + Sequelize | ✅ Completado |
-| Sprint 7 | Validaciones frontend y backend | ✅ Completado |
-| Sprint 8 | API REST + Dashboard React | ✅ Completado |
-
-*Proyecto: Ushuaia MusicStore — FINALIZADO*
-
-*Digital House Full Stack*
+<!-- Agregar acá tu LinkedIn y/o contacto -->
