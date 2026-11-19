@@ -30,12 +30,8 @@ Proyecto final del trayecto **Full Stack Developer** de Digital House. Es una ti
     <td align="center"><b>Detalle de producto</b><br><img src="docs/img/detalle.gif" width="400"></td>
   </tr>
   <tr>
-    <td align="center"><b>Carrito</b><br><img src="docs/img/carrito.png" width="400"></td>
+    <td align="center"><b>Carrito</b><br><img src="docs/img/carrito.gif" width="400"></td>
     <td align="center"><b>Registro y login</b><br><img src="docs/img/login.gif" width="400"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Gestión de productos (admin)</b><br><img src="docs/img/admin-productos.gif" width="400"></td>
-    <td align="center"><b>Dashboard React</b><br><img src="docs/img/dashboard.png" width="400"></td>
   </tr>
 </table>
 
