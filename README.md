@@ -26,7 +26,7 @@ Proyecto final del trayecto **Full Stack Developer** de Digital House. Es una ti
 
 <table>
   <tr>
-    <td align="center"><b>Catálogo</b><br><img src="docs/img/catalogo.png" width="400"></td>
+    <td align="center"><b>Catálogo</b><br><img src="docs/img/catalogo.gif" width="400"></td>
     <td align="center"><b>Detalle de producto</b><br><img src="docs/img/detalle.png" width="400"></td>
   </tr>
   <tr>
